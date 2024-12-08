@@ -1,0 +1,309 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sign-in-page {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../img/givin2.png");
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.sign-in-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 0;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+@media (max-width: 576px) {
+
+    /* Adjust max-width as needed for mobile size */
+    .sign-in-container {
+        margin: 10 auto;
+        /* Centers the container */
+        float: none;
+        /* Removes any float, if applied */
+    }
+}
+
+
+.logo-sign {
+    animation: pulse 2s infinite;
+
+    width: 350px;
+    /* Set the desired width */
+    height: 300px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Ensure the image scales well */
+
+}
+
+
+
+
+.form-container-sign {
+    flex: 1;
+    /* max-width: 300px; */
+    background: linear-gradient(#b2b2a7a9, #ebf1f1be) padding-box,
+        linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    padding: 20px;
+    box-shadow: 0px 0px 90px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    z-index: 1;
+
+}
+
+
+
+.password-group .input-group-append button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.forgot-password-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+    .sign-btn {
+        width: 9em;
+        height: 3em;
+        border-radius: 30em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }
+
+    .sign-btn::before {
+        content: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+        transition: 0.5s ease;
+        display: block;
+        z-index: -1;
+    }
+
+    .sign-btn:hover::before {
+        width: 9em;
+    }
+
+
+    .sign-in-page,
+    .log-in-page {
+        padding: 10px;
+    }
+
+
+
+    .form-container-sign .btn {
+        width: 100%;
+        /* Make buttons full-width */
+    }
+
+    .input-group .form-control {
+        width: 100%;
+        /* Full-width input fields */
+    }
+}
+
+
+
+
+/* Tablet styles */
+@media (max-width: 992px) {
+    .for-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        /* On tablets, make it full width */
+    }
+}
+
+
+.button {
+    background-color: #4CAF50;
+    size: 100px;
+}
+
+.go-but{
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+
+
+
+/* 
+
+.form-group label,
+.form-check-label {
+    text-align: left;
+    display: block;
+    
+}
+
+.form-group input{
+    border-radius: 400px !important;
+}
+
+.form-group label{
+    font-size: 21px !important;
+}
+
+
+
+.sign-in-container .logo-container .logo {
+    width: 500px !important;
+    border-radius: 30% !important;
+    max-width: 100% !important;
+
+}
+
+
+.sign-in-container .form-container .form-group button{
+    border: none !important;
+
+}
+
+.sign-in-container .form-container .form-group .sign{
+      font-weight:bold !important;
+      font-size: 10px !important;
+     
+
+}
+
+.sign-in-container .form-container .form-group .btn:hover {
+   background-color: #b5d747 !important;
+
+}
+
+.form-container .but1{
+    background-color: #6a9e2f !important;
+    border : none !important;
+    border-radius: 400px !important;
+}
+
+.form-container .btn:hover{
+    background-color: #6f8134 !important;
+    
+}
+
+
+
+.form-container-sign {
+    flex: 1;
+    max-width: 300px;
+    background: linear-gradient(#b2b2a7a9, #ebf1f1be) padding-box,
+    linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    padding: 20px;
+    box-shadow: 0px 0px 90px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    z-index: 1;
+  
+    
+  } */
+
+
+
+
+
+
+
+
+/* From Uiverse.io by xueyuantan */
+.but2 {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.but2::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.but2:hover::before {
+    width: 9em;
+}
+
+
+.logo-sign {
+    animation: pulse 2s infinite;
+
+    width: 350px;
+    /* Set the desired width */
+    height: 300px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Ensure the image scales well */
+
+}

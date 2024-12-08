@@ -1,0 +1,188 @@
+.container-post {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(rgba(255, 255, 255, 0.148), rgba(255, 255, 255, 0.1)),
+        url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: auto;
+
+
+}
+
+
+
+
+
+
+
+.post-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.post-content h5 {
+    font-weight: bold;
+}
+
+.post-content p {
+    margin: 5px 0;
+}
+
+.msg-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(29, 150, 2);
+    border: 50px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.msg-button:hover {
+    background-color: rgb(156, 212, 52);
+}
+
+.unavailable-warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container navbar {
+    width: 30%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Navbar Styling */
+.navbar-post {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fabd;
+    /* Light gray background */
+    border-bottom: 1px solid #ddd;
+    /* Subtle border for separation */
+    font-family: Arial, sans-serif;
+    /* Clean, professional font */
+}
+
+/* HungerTreat logo on the left */
+.navbar-left-post {
+    font-size: 44px;
+    font-weight: bold;
+    color: #000000;
+    /* Dark text for contrast */
+}
+
+/* Styling for the Post link on the right */
+.navbar-right-post .post-link {
+    font-size: 26px;
+    color: #0a2010;
+    /* Standard blue link color */
+    text-decoration: underline;
+    /* Underline to signify a link */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Smooth color change on hover */
+}
+
+/* Hover effect for the Post link */
+.navbar-right-post .post-link:hover {
+    color: #0056b3;
+    /* Slightly darker blue on hover */
+}
+
+.navbar-right-post {
+    font-size: 30px;
+    margin-right: 100px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-post {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center align items */
+        padding: 10px;
+    }
+
+    .navbar-left-post {
+        font-size: 32px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .navbar-right-post {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+        margin-right: 0;
+        /* Remove margin */
+        text-align: center;
+        /* Center align the text */
+    }
+
+    .navbar-right-post .post-link {
+        font-size: 20px;
+        /* Smaller font for links */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-left-post {
+        font-size: 28px;
+        /* Further reduce font size */
+    }
+
+    .navbar-right-post {
+        font-size: 20px;
+        /* Further reduce font size */
+    }
+
+    .navbar-right-post .post-link {
+        font-size: 18px;
+    }
+}
+
+
+.head {
+    font-weight: bolder;
+    font-size: 70px;
+    color: white;
+}
+
+.post-box h3 {
+    font-size: 30px;
+    font-weight: bold;
+}

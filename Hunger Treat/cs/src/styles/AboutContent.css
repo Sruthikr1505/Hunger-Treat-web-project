@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+
+.full {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../img/waste.png");
+    backdrop-filter: blur(7px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.full::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/waste.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+    /* Places the background behind the content */
+    opacity: 0.9;
+    /* Optional: Adjust transparency if needed */
+}
+
+
+.aboutus,
+.how-it-works {
+    background-color: rgb(239, 227, 227);
+    padding: 50px 0;
+}
+
+.heading h1 {
+    color: rgb(117, 35, 2);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.mission h2,
+.ourmission h1,
+.column h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.ourmission p,
+.column p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.benefit p {
+    font-size: 25px;
+}
+
+
+/* Default styles for mobile/small screens */
+.para1 {
+    font-size: 12px;
+    /* Example default font size for mobile */
+}
+
+/* Styles for desktop screens */
+@media (min-width: 768px) {
+
+    /* Adjust the min-width as needed */
+    .para1 {
+        font-size: 29px;
+        /* Font size for desktop (fs-3) */
+    }
+}
+
+.para2 {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .para2 {
+        font-size: 29px;
+    }
+
+}
+
+
+.para3 {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .para3 {
+        font-size: 29px;
+    }
+
+}
+
+
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+}
+
+.cta-button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    width: 9em;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+@keyframes fadeInup {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.mission,
+.ourmission,
+.benefit,
+.hand-image,
+.HungerTreat-image,
+.add-image {
+    animation: fadeInup 2s ease, fadeInRight 2s ease;
+}
+
+.mission,
+.ourmission,
+.benefit {
+    margin-bottom: 40px;
+}
+
+.HungerTreat-image img,
+.hand-image img,
+.add-image img {
+    border-radius: 25px;
+}
+
+.hand-image {
+    margin-top: 100px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideIn {
+    animation: slideIn 1s forwards;
+}
+
+.row .HungerTreat-image {
+    overflow: hidden;
+}
+
+.row .HungerTreat-image img {
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.row .HungerTreat-image:hover img {
+    transform: scale(1.25);
+}
+
+@media (max-width: 575.98px) {
+    .ourmission {
+        font-size: 16px;
+        /* Adjust text size */
+        margin-left: 10px;
+        /* Adjust margin */
+        padding: 2px;
+        /* Add padding */
+    }
+}
+
+
+.row .add-image {
+    overflow: hidden;
+}
+
+.row .add-image img {
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.row .add-image:hover img {
+    transform: scale(1.25);
+}
+
+
+.row .hand-image {
+    overflow: hidden;
+}
+
+.row .hand-image img {
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.row .hand-image:hover img {
+    transform: scale(1.25);
+}
+
+
+
+
+
+
+.si-btn {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.si-btn:hover {
+    color: rgb(255, 249, 249);
+}
+
+.si-btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.si-btn:hover::before {
+    width: 160%;
+}
+
+
+
+
+
+
+.log-btn {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.log-btn:hover {
+    color: white;
+}
+
+.log-btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.log-btn:hover::before {
+    width: 160%;
+}
